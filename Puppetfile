@@ -21,6 +21,13 @@ def github(name, *args)
   end
 end
 
+# Shortcut for a module from it's source on GitHub
+def githubsource(name, options=nil)
+  options ||= {}
+  options[:repo] ||= "boxen/puppet-#{name}"
+  mod name, :git => "git://github.com/#{options[:repo]}.git"
+end
+
 # Shortcut for a module under development
 def dev(name, *args)
   mod name, :path => "#{ENV['HOME']}/src/boxen/puppet-#{name}"
@@ -55,3 +62,5 @@ github "xquartz",    "1.1.0"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
+
+githubsource "brewcask",	 :repo => "sidapa/puppet-brewcask"

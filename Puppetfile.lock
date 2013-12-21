@@ -1,3 +1,10 @@
+GIT
+  remote: git://github.com/sidapa/puppet-brewcask.git
+  ref: master
+  sha: 5552d1d175748076f84977db161b94db6740e0c3
+  specs:
+    brewcask (0.0.1)
+
 GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
@@ -50,6 +57,7 @@ GITHUBTARBALL
 
 DEPENDENCIES
   boxen (= 3.3.4)
+  brewcask (>= 0)
   gcc (= 2.0.1)
   git (= 1.2.5)
   homebrew (= 1.5.1)
