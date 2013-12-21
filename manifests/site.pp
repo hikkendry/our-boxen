@@ -55,6 +55,7 @@ node default {
   # core modules, needed for most things
   # include dnsmasq
   include git
+  include brewcask
   # include hub
   # include nginx
 
@@ -81,6 +82,20 @@ node default {
       'findutils',
       'gnu-tar'
     ]:
+  }
+
+  # common applications
+  # always try and install from this list first:
+  # https://github.com/phinze/homebrew-cask/tree/master/Casks
+  # or run: `$ brew cask search APP_NAME` to find its name
+  package { 
+    [
+      'sublime-text',
+      'google-chrome',
+      'firefox',
+      'iterm2'
+    ]:
+    provider => 'brewcask'
   }
 
   file { "${boxen::config::srcdir}/our-boxen":
