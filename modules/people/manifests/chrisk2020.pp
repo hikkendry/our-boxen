@@ -2,5 +2,7 @@
 # Personal config for Chris Knight
 #
 
-# Include applications from your directory
-include people::chrisk2020::applications
+class people::chrisk2020 {
+	# Include applications from your directory
+	include people::chrisk2020::applications
+}
