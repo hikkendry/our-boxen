@@ -64,6 +64,11 @@ node default {
     fail("Please enable full disk encryption and try again. You can enable this in 'System Preferences > Security & Privacy > FileVault'.")
   }
 
+
+  # Remember to add the module to your Puppetfile
+  # then uncomment the following line and change 'module-name' for the real module
+  include ohmyzsh
+
   # node versions
   # include nodejs::v0_6
   # include nodejs::v0_8
@@ -93,7 +98,9 @@ node default {
       'sublime-text',
       'google-chrome',
       'firefox',
-      'iterm2'
+      'iterm2',
+      'sequel-pro',
+      'skype'
     ]:
     provider => 'brewcask'
   }
