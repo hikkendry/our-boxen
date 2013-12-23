@@ -49,7 +49,7 @@ github "git",        "1.2.5"
 github "homebrew",   "1.5.1"
 # github "hub",        "1.0.3"
 github "inifile",    "1.0.0", :repo => "puppetlabs/puppetlabs-inifile"
-# github "nginx",      "1.4.2"
+github "nginx",      "1.4.2"
 # github "nodejs",     "3.3.0"
 # github "openssl",    "1.0.0"
 # github "phantomjs",  "2.0.2"
@@ -63,14 +63,13 @@ github "xquartz",    "1.1.0"
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
 
-githubsource "brewcask",	 :repo => "sidapa/puppet-brewcask"
 github "ohmyzsh",   "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
-
-# Dev env
+githubsource "brewcask",	 :repo => "sidapa/puppet-brewcask"
 github "wget", "1.0.0"
 github "autoconf", "1.0.0"
 github "libtool", "1.0.0"
 github "pcre", "1.0.0"
 github "libpng", "1.0.0"
+github "apache",  "0.0.2", :repo => "mattheath/puppet-apache"
 githubsource "mysql", :repo => "boxen/puppet-mysql"
 github "php", "1.1.4"

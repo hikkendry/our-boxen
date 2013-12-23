@@ -53,9 +53,9 @@ GITHUBTARBALL
     libtool (1.0.0)
 
 GITHUBTARBALL
-  remote: boxen/puppet-mysql
+  remote: boxen/puppet-nginx
   specs:
-    mysql (1.0.0)
+    nginx (1.4.2)
 
 GITHUBTARBALL
   remote: boxen/puppet-pcre
@@ -71,11 +71,6 @@ GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
-
-GITHUBTARBALL
-  remote: boxen/puppet-redis
-  specs:
-    redis (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -98,6 +93,11 @@ GITHUBTARBALL
     xquartz (1.1.0)
 
 GITHUBTARBALL
+  remote: mattheath/puppet-apache
+  specs:
+    apache (0.0.2)
+
+GITHUBTARBALL
   remote: puppetlabs/puppetlabs-inifile
   specs:
     inifile (1.0.0)
@@ -113,6 +113,7 @@ GITHUBTARBALL
     ohmyzsh (1.0.0)
 
 DEPENDENCIES
+  apache (= 0.0.2)
   autoconf (= 1.0.0)
   boxen (= 3.3.4)
   brewcask (>= 0)
@@ -124,6 +125,8 @@ DEPENDENCIES
   libpng (= 1.0.0)
   libtool (= 1.0.0)
   mysql (>= 0)
+  nginx (= 1.4.2)
+  ohmyzsh (= 1.0.0)
   pcre (= 1.0.0)
   php (= 1.1.4)
   pkgconfig (= 1.0.0)

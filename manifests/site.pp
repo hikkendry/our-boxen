@@ -53,20 +53,20 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
+  include ohmyzsh
   include dnsmasq
   include git
   include brewcask
   # include hub
   # include nginx
 
+  # apache config
+  include apache
+
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail("Please enable full disk encryption and try again. You can enable this in 'System Preferences > Security & Privacy > FileVault'.")
   }
-
-  # Remember to add the module to your Puppetfile
-  # then uncomment the following line and change 'module-name' for the real module
-  include ohmyzsh
 
   # php environment
   include wget
@@ -108,7 +108,8 @@ node default {
   }
 
   # common applications
-  # always try and install from this list first:
+  # always try and install using brewcask.
+  # to see which apps are available for download visit:
   # https://github.com/phinze/homebrew-cask/tree/master/Casks
   # or run: `$ brew cask search APP_NAME` to find its name
   package { 
