@@ -41,7 +41,7 @@ github "boxen", "3.3.4"
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-# github "dnsmasq",    "1.0.0"
+github "dnsmasq",    "1.0.0"
 # github "foreman",    "1.0.0"
 github "gcc",        "2.0.1"
 github "git",        "1.2.5"
@@ -65,3 +65,12 @@ github "xquartz",    "1.1.0"
 
 githubsource "brewcask",	 :repo => "sidapa/puppet-brewcask"
 github "ohmyzsh",   "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
+
+# Dev env
+github "wget", "1.0.0"
+github "autoconf", "1.0.0"
+github "libtool", "1.0.0"
+github "pcre", "1.0.0"
+github "libpng", "1.0.0"
+githubsource "mysql", :repo => "boxen/puppet-mysql"
+github "php", "1.1.4"
