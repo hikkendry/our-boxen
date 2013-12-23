@@ -4,5 +4,15 @@ class people::chrisk2020::applications {
 	# Remember to add the module to your Puppetfile
 	# then uncomment the following line and change 'module-name' for the real module
 
-	# include module-name
+
+	# now you can install packages using homebrew-cask
+	package { 
+    [
+      'skype',
+      'sourcetree',
+      'omnigraffle',
+      'gas-mask'
+    ]:
+    provider => 'brewcask'
+  }
 }

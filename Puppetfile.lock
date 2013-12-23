@@ -6,9 +6,19 @@ GIT
     brewcask (0.0.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-autoconf
+  specs:
+    autoconf (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-boxen
   specs:
     boxen (3.3.4)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dnsmasq
+  specs:
+    dnsmasq (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-gcc
@@ -26,9 +36,49 @@ GITHUBTARBALL
     homebrew (1.5.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-imagemagick
+  specs:
+    imagemagick (1.2.1)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libpng
+  specs:
+    libpng (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-nginx
+  specs:
+    nginx (1.4.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pcre
+  specs:
+    pcre (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-php
+  specs:
+    php (1.1.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-pkgconfig
   specs:
     pkgconfig (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-redis
+  specs:
+    redis (2.1.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-repository
@@ -39,6 +89,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-wget
+  specs:
+    wget (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-xquartz
@@ -55,16 +110,34 @@ GITHUBTARBALL
   specs:
     stdlib (4.1.0)
 
+GITHUBTARBALL
+  remote: samjsharpe/puppet-ohmyzsh
+  specs:
+    ohmyzsh (1.0.0)
+
 DEPENDENCIES
+  autoconf (= 1.0.0)
   boxen (= 3.3.4)
   brewcask (>= 0)
+  dnsmasq (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
   homebrew (= 1.5.1)
+  imagemagick (= 1.2.1)
   inifile (= 1.0.0)
+  libpng (= 1.0.0)
+  libtool (= 1.0.0)
+  mysql (= 1.0.0)
+  nginx (= 1.4.2)
+  ohmyzsh (= 1.0.0)
+  pcre (= 1.0.0)
+  php (= 1.1.4)
   pkgconfig (= 1.0.0)
+  pkgconfig (= 1.0.0)
+  redis (= 2.1.0)
   repository (= 2.2.0)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  wget (= 1.0.0)
   xquartz (= 1.1.0)
 

@@ -64,3 +64,4 @@ github "xquartz",    "1.1.0"
 # https://github.com/boxen.
 
 githubsource "brewcask",	 :repo => "sidapa/puppet-brewcask"
+github "ohmyzsh",   "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
