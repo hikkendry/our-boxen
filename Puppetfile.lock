@@ -40,7 +40,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
-    homebrew (1.5.1)
+    homebrew (1.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-libpng
@@ -120,7 +120,7 @@ DEPENDENCIES
   dnsmasq (= 1.0.0)
   gcc (= 2.0.1)
   git (= 1.2.5)
-  homebrew (= 1.5.1)
+  homebrew (= 1.6.0)
   inifile (= 1.0.0)
   libpng (= 1.0.0)
   libtool (= 1.0.0)
