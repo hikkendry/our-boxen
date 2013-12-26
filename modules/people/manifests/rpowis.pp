@@ -3,6 +3,7 @@
 #
 
 class people::rpowis {
-	# Include applications from your directory
+	# Include files from your personal directory
+	include people::rpowis::dotfiles
 	include people::rpowis::applications
 }
