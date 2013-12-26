@@ -68,9 +68,6 @@ node default {
     fail("Please enable full disk encryption and try again. You can enable this in 'System Preferences > Security & Privacy > FileVault'.")
   }
 
-  # hikkendry modules
-  include hikkendry::environment
-
   # php environment
   include wget
   include autoconf
