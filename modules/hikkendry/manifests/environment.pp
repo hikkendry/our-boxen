@@ -5,4 +5,6 @@ class hikkendry::environment {
   include hikkendry::php
   include hikkendry::ruby
 
+  # applications
+  include hikkendry::applications
 }
