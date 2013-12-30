@@ -60,9 +60,6 @@ node default {
   # include hub
   # include nginx
 
-  # apache config
-  include apache
-
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
     fail("Please enable full disk encryption and try again. You can enable this in 'System Preferences > Security & Privacy > FileVault'.")
@@ -101,6 +98,7 @@ node default {
     ]:
   }
 
+  include hikkendry::environment
   # common applications
   # always try and install using brewcask.
   # to see which apps are available for download visit:
