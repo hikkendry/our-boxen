@@ -53,10 +53,8 @@ Homebrew::Formula <| |> -> Package <| |>
 
 node default {
   # core modules, needed for most things
-  include ohmyzsh
   include dnsmasq
   include git
-  include brewcask
   # include hub
   # include nginx
 
