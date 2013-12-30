@@ -5,4 +5,13 @@ class people::rpowis::applications {
 	# then uncomment the following line and change 'module-name' for the real module
 
 	# include module-name
+  package { 
+    [
+    	'alfred',
+    	'slate',
+    	'vmware-fusion'
+    ]:
+    provider => 'brewcask'
+  }
+
 }
