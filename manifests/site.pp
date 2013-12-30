@@ -65,25 +65,6 @@ node default {
     fail("Please enable full disk encryption and try again. You can enable this in 'System Preferences > Security & Privacy > FileVault'.")
   }
 
-  # php environment
-  include wget
-  include autoconf
-  include libtool
-  include pkgconfig
-  include pcre
-  include libpng
-  include mysql
-  include php::5_4
-
-  # TODO: tidy this shit up!!
-  exec { "fix freetype for php":
-    command => "${boxen::config::repodir}/manifests/freetype.sh | sh",
-    creates => "${boxen::config::homedir}/homebrew/Cellar/freetype/2.4.11/lib/libfreetype.a",
-    before => Exec['phpenv-setup-root-repo']
-  }
-
-  # mysql::db { 'mydb': }
-
   # node versions
   # include nodejs::v0_6
   # include nodejs::v0_8
