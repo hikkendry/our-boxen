@@ -80,22 +80,6 @@ node default {
   }
 
   include hikkendry::environment
-  # common applications
-  # always try and install using brewcask.
-  # to see which apps are available for download visit:
-  # https://github.com/phinze/homebrew-cask/tree/master/Casks
-  # or run: `$ brew cask search APP_NAME` to find its name
-  package { 
-    [
-      'sublime-text',
-      'google-chrome',
-      'firefox',
-      'iterm2',
-      'sequel-pro',
-      'skype'
-    ]:
-    provider => 'brewcask'
-  }
 
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
