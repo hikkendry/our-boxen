@@ -4,7 +4,8 @@ class hikkendry::environment {
   include ohmyzsh
   include brewcask
   
-  # languages
+  # development
+  include dnsmasq
   include hikkendry::apache
   include hikkendry::php
   include hikkendry::ruby
