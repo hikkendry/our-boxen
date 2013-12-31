@@ -7,7 +7,7 @@ class hikkendry::environment {
   # development
   include dnsmasq
   include hikkendry::apache
-  include hikkendry::php
+  # include hikkendry::php
   # include hikkendry::ruby
   # include hikkendry::node
 
