@@ -68,7 +68,7 @@ github "pcre", "1.0.0"
 github "libpng", "1.0.0"
 
 # dev env
-github "apache",  "1.0.1", :repo => "rocketstud-io/puppet-apache"
+github "apache",  "1.0.2", :repo => "Hikkendry/puppet-apache"
 github "mysql", "1.2.0"
 github "php", "1.1.4"
 
