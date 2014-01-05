@@ -14,6 +14,7 @@ class hikkendry::environment {
 
   # applications
   # include hikkendry::applications
+  include sequel_pro
 
   # iterm colour theme
   # repository { "solarized":

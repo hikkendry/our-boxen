@@ -75,3 +75,5 @@ github "php", "1.1.4"
 # tools
 github "ohmyzsh",   "1.0.0", :repo => "samjsharpe/puppet-ohmyzsh"
 githubsource "brewcask", :repo => "sidapa/puppet-brewcask"
+
+github "sequel_pro",  "1.0.1"
