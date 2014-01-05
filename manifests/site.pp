@@ -71,10 +71,11 @@ node default {
     ]:
   }
 
-  include hikkendry::environment
-
   file { "${boxen::config::srcdir}/our-boxen":
     ensure => link,
     target => $boxen::config::repodir
   }
+
+  # Company modules
+  require hikkendry::environment
 }
